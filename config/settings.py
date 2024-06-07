@@ -28,7 +28,11 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'http://localhost:3000',
+    'http://127.0.0.1:8000',
+    'port-0-filmcritique-server-1272llwumfcoj.sel5.cloudtype.app/'
+]
 
 
 # Application definition
