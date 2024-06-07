@@ -141,12 +141,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # cors 설정
 CORS_ALLOWED_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+    'http://127.0.0.1:8000',
+    'https://port-0-filmcritique-server-1272llwumfcoj.sel5.cloudtype.app/'
+]
 
 # csrf 설정
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:8000',
-    'http://port-0-filmcritique-server-1272llwumfcoj.sel5.cloudtype.app/',
-    'http://port-0-filmcritique-server-1272llwumfcoj.sel5.cloudtype.app/'
+    'https://port-0-filmcritique-server-1272llwumfcoj.sel5.cloudtype.app/'
 ]
